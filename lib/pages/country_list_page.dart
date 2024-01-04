@@ -1,14 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:news/helper/category.dart';
+import 'package:news/helper/country_headlines.dart';
 
-class HeadlinesPage extends StatefulWidget {
-  const HeadlinesPage({super.key});
-
-  @override
-  State<HeadlinesPage> createState() => _HeadlinesPageState();
-}
-
-class _HeadlinesPageState extends State<HeadlinesPage>{
+class CountryList extends StatelessWidget {
+  const CountryList({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,9 +10,9 @@ class _HeadlinesPageState extends State<HeadlinesPage>{
       length: 7,
       child: Scaffold(
         
-        appBar: AppBar(title: const Text('Headlines', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600, color: Colors.white),),
+        appBar: AppBar(title: const Text('Country Headlines', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600, color: Colors.white),),
           centerTitle: true,
-          toolbarHeight: 70,
+          toolbarHeight: 65,
           elevation: 0,
           backgroundColor: Colors.red.shade400,
         ),
@@ -29,30 +23,31 @@ class _HeadlinesPageState extends State<HeadlinesPage>{
               isScrollable: true,
               indicatorColor: Color.fromRGBO(239, 83, 80, 1),
               padding: EdgeInsets.only(top: 4),
-              unselectedLabelColor: Colors.black,
               labelColor: Color.fromRGBO(239, 83, 80, 1),
+              unselectedLabelColor: Colors.black,
               labelStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
+
               tabs:[
                 Tab(
-                  child: Text('Science'),
+                  child: Text('USA'),
                 ),
                 Tab(
-                  child: Text('Business'),
+                  child: Text('England'),
                 ),
                 Tab(
-                  child: Text('Technology'),
+                  child: Text('China'),
                 ),
                 Tab(
-                  child: Text('Sports'),
+                  child: Text('Canada'),
                 ),
                 Tab(
-                  child: Text('Health'),
+                  child: Text('Japan'),
                 ),
                 Tab(
-                  child: Text('Entertainment'),
+                  child: Text('France'),
                 ),
                 Tab(
-                  child: Text('General'),
+                  child: Text('Russia'),
                 ),
               ] 
             ),
@@ -61,25 +56,25 @@ class _HeadlinesPageState extends State<HeadlinesPage>{
               child: TabBarView(
                 children: [
                   Expanded(
-                    child: CategoryNews(category: 'science')
+                    child: CountryHeadlines(countryCode: 'us')
                   ),
                   Expanded(
-                    child: CategoryNews(category: 'Business')
+                    child: CountryHeadlines(countryCode: 'gb')
                   ),
                   Expanded(
-                    child: CategoryNews(category: 'Technology')
+                    child: CountryHeadlines(countryCode: 'cn')
                   ),
                   Expanded(
-                    child: CategoryNews(category: 'Sports')
+                    child: CountryHeadlines(countryCode: 'ca')
                   ),
                   Expanded(
-                    child: CategoryNews(category: 'Health')
+                    child: CountryHeadlines(countryCode: 'jp')
                   ),
                   Expanded(
-                    child: CategoryNews(category: 'Entertainment')
+                    child: CountryHeadlines(countryCode: 'fr')
                   ),
                   Expanded(
-                    child: CategoryNews(category: 'General')
+                    child: CountryHeadlines(countryCode: 'ru')
                   ),
                 ]
               ),

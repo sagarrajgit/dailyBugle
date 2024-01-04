@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news/pages/home_page.dart';
-import 'package:news/pages/headline_page.dart';
-import 'package:news/pages/country_page.dart';
+import 'package:news/pages/category_list_page.dart';
+import 'package:news/pages/country_list_page.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 class NavBarPage extends StatefulWidget {
@@ -14,7 +14,7 @@ class NavBarPage extends StatefulWidget {
 class _NavBarPageState extends State<NavBarPage> {
 
   final List<Widget> pageList= const [
-    HomePage(),
+    HomePage(defaultContryCode: 'in',), // default india
     HeadlinesPage(),
     CountryList()
   ];
@@ -47,7 +47,7 @@ class _NavBarPageState extends State<NavBarPage> {
               icon: Icons.home_rounded, text: 'Home',
             ),
             GButton(
-              icon: Icons.view_headline_rounded, text: 'Headlines',
+              icon: Icons.view_headline_rounded, text: 'Categories',
             ),
             GButton(
               icon: Icons.travel_explore_rounded, text: 'Country',

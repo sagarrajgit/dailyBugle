@@ -11,7 +11,8 @@ class ArticleWebView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.red.shade400,
-        toolbarHeight: 70,
+        foregroundColor: Colors.white,
+        toolbarHeight: 65,
         title: const Text(
           'Daily Bugle',
           style: TextStyle(

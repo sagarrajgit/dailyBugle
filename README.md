@@ -1,16 +1,21 @@
-# news
+# Project Name
 
-A new Flutter project.
+Daily Bugle
 
-## Getting Started
+## Description
 
-This project is a starting point for a Flutter application.
+News App created using Flutter/Dart and News API for fetching realtime data, having features like top headlines of different countries and categories and search using different keywords.
 
-A few resources to get you started if this is your first Flutter project:
+# Features
+- Top headlines of different Categories
+- Top headlines of different countries
+- Search using keywords
+- See in Web View
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+<img height="450px" src="https://github.com/sagarrajgit/dailyBugle/blob/main/screenshots/1.jpg" alt="Home Page" />
+<img height="450px" src="https://github.com/sagarrajgit/dailyBugle/blob/main/screenshots/2.jpg" alt="Headlines" />
+<img height="450px" src="https://github.com/sagarrajgit/dailyBugle/blob/main/screenshots/3.jpg" alt="Country Headlines"/>
+<img height="450px" src="https://github.com/sagarrajgit/dailyBugle/blob/main/screenshots/4.jpg" alt="Search Screen"/>
+<img height="450px" src="https://github.com/sagarrajgit/dailyBugle/blob/main/screenshots/5.jpg" alt="Search Results"/>
+<img height="450px" src="https://github.com/sagarrajgit/dailyBugle/blob/main/screenshots/6.jpg" alt="Web View" />
